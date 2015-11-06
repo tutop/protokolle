@@ -11,7 +11,7 @@ rdichte=m/rvolumen
 print('Rechteckvolumen =',rvolumen)
 print('Rechteckdichte=',rdichte)
 
-#zylinder Stab
+#zylinder Stab.2
 
 l=0.58
 m=356.4
