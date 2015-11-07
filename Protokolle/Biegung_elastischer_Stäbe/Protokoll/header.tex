@@ -4,6 +4,16 @@
   titlepage=firstiscover, % Titelseite ist Deckblatt
 ]{scrartcl}
 
+%pagenumber bottom right
+\usepackage{fancyhdr}
+\usepackage{lipsum}
+\pagestyle{fancy}
+% Clear the header and footer
+\fancyhead{}
+\fancyfoot{}
+% Set the right side of the footer to be the page number
+\fancyfoot[R]{\thepage}
+
 % Paket float verbessern
 \usepackage{scrhack}
 

@@ -21,6 +21,10 @@ INPUT /home/markus/.local/texlive/2015/texmf-dist/tex/latex/koma-script/scrsize1
 INPUT /home/markus/.local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT /home/markus/.local/texlive/2015/texmf-dist/tex/latex/koma-script/typearea.sty
 INPUT /home/markus/.local/texlive/2015/texmf-dist/tex/latex/koma-script/typearea.sty
+INPUT /home/markus/.local/texlive/2015/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+INPUT /home/markus/.local/texlive/2015/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+INPUT /home/markus/.local/texlive/2015/texmf-dist/tex/latex/lipsum/lipsum.sty
+INPUT /home/markus/.local/texlive/2015/texmf-dist/tex/latex/lipsum/lipsum.sty
 INPUT /home/markus/.local/texlive/2015/texmf-dist/tex/latex/koma-script/scrhack.sty
 INPUT /home/markus/.local/texlive/2015/texmf-dist/tex/latex/koma-script/scrhack.sty
 INPUT /home/markus/.local/texlive/2015/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
@@ -371,6 +375,10 @@ INPUT /home/markus/.local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm
 INPUT /home/markus/.local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT /home/markus/.local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT /home/markus/.local/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman6-regular.luc
+INPUT ~/Documents/Uni/protokolle/Protokolle/Biegung_elastischer_Stäbe/Auswertung/plot1.pdf
+INPUT ~/Documents/Uni/protokolle/Protokolle/Biegung_elastischer_Stäbe/Auswertung/plot2.pdf
+INPUT ~/Documents/Uni/protokolle/Protokolle/Biegung_elastischer_Stäbe/Auswertung/plot4.pdf
+INPUT ~/Documents/Uni/protokolle/Protokolle/Biegung_elastischer_Stäbe/Auswertung/plot3.pdf
 INPUT ./content/diskussion.tex
 INPUT ./content/diskussion.tex
 INPUT build/main.aux

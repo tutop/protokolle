@@ -12,3 +12,4 @@ def F(m):
 
 F1=F(m1)
 F2=F(m2)
+print (F1,'\n',F2)

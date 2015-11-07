@@ -3,7 +3,21 @@
 \subsection{Bestimmung des Elastizitätsmoduls mit einseitiger Einspannung}
 
 Im folgenden soll das Elastizitätsmodul des rechteckigen Stabes und des zylindrischen Stabes bei einseitiger Einspannung bestimmt werden.
-Man erhält durch Messung die in Tabelle \ref{tab:Rechteckwerte} gezeigten Werte.
+Man erhält durch Messung die in Tabelle \ref{tab:Rechteckwerte} gezeigten Werte. Mittels linearer Regression lässt sich das Elastizitätsmodul bestimmen.
+In Abbildung \ref{fig:kurveRecht} ist $D(x)$ über $g(x)$ aufgetragen.
+\\
+\\
+Für die Abmessungen des rechteckigen Stabs werden gemittelte Werte benutzt. Somit ergibt sich als Breite $b=\SI{0.01278+-0.00234}{\meter}$.
+Die Höhe der Querschnittsfläche beträgt $h=\SI{0.01}{\meter}$.
+Das verwendete Gewicht ist bei der einseitigen Einspannung vom rechteckigen wie auch vom zylindrischen Stab \SI{1.0427}{\kilo\gram}. Dies entspricht einer
+Gewichtskraft von $F=\SI{10.23}{\newton}$. Für das Flächenträgheitsmoment ergibt sich:
+\begin{align*}
+  I &= \int_Q y² \symup{d}q(y) \\
+    &= \int_{y=-\frac{1}{2}h}^{y=\frac{1}{2}h} by² \symup{d}y \\
+    &= \frac{1}{12}bh³ \\
+  I &= \frac{1}{12} \\
+\end{align*}
+
 
 
 \begin{table}
@@ -12,7 +26,7 @@ Man erhält durch Messung die in Tabelle \ref{tab:Rechteckwerte} gezeigten Werte
   \label{tab:Rechteckwerte}
   \begin{tabular}{c c c c c c}
     \toprule
-      $x\:/\:\si{\milli\meter}$ & $D_1\:/\:\si{\milli\meter}$ & $D_2\:/\:\si{\milli\meter}$ & $D(x)\:/\:\si{\milli\meter}$ & $f(x)=Lx^2-\frac{x^3}{3}$ \\
+      $x\:/\:\si{\milli\meter}$ & $D_1\:/\:\si{\milli\meter}$ & $D_2\:/\:\si{\milli\meter}$ & $D(x)\:/\:\si{\milli\meter}$ & $g(x)=Lx^2-\frac{x^3}{3}$ \\
     \midrule
     505 & 6.96 & 3.12 & 3.83 & 9.35 \\
     500 & 7.01 & 3.24 & 3.77 & 9.20 \\
@@ -69,13 +83,21 @@ Man erhält durch Messung die in Tabelle \ref{tab:Rechteckwerte} gezeigten Werte
   \end{tabular}
 \end{table}
 
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{~/Documents/Uni/protokolle/Protokolle/Biegung_elastischer_Stäbe/Auswertung/plot1.pdf}
+  \caption{Ausgleichskurve durch Messwerte des rechteckigen Stabes}
+  \label{fig:kurveRecht}
+\end{figure}
+
+
 \begin{table}
   \centering
   \caption{Messdaten zum zylindrischen Stab}
   \label{tab:Zylwerte}
   \begin{tabular}{c c c c c c}
     \toprule
-      $x\:/\:\si{\milli\meter}$ & $D_1\:/\:\si{\milli\meter}$ & $D_2\:/\:\si{\milli\meter}$ & $D(x)\:/\:\si{\milli\meter}$ & $f(x)=Lx^2-\frac{x^3}{3}$ \\
+      $x\:/\:\si{\milli\meter}$ & $D_1\:/\:\si{\milli\meter}$ & $D_2\:/\:\si{\milli\meter}$ & $D(x)\:/\:\si{\milli\meter}$ & $g(x)=Lx^2-\frac{x^3}{3}$ \\
     \midrule
     505 & 6.52 & 1.52 & 5.00 & 9.09 \\
     500 & 6.57 & 1.62 & 4.95 & 8.95 \\
@@ -132,13 +154,21 @@ Man erhält durch Messung die in Tabelle \ref{tab:Rechteckwerte} gezeigten Werte
   \end{tabular}
 \end{table}
 
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{~/Documents/Uni/protokolle/Protokolle/Biegung_elastischer_Stäbe/Auswertung/plot2.pdf}
+  \caption{Ausgleichskurve durch Messwerte des zylindrischen Stabes}
+  \label{fig:kurveZyl}
+\end{figure}
+
+
 \begin{table}
   \centering
   \caption{Messdaten zum zweiseitig eingespannten rechteckigen Stab. Linke Seite}
   \label{tab:zweiwerte}
   \begin{tabular}{c c c c c c}
     \toprule
-      $x\:/\:\si{\milli\meter}$ & $D_1\:/\:\si{\milli\meter}$ & $D_2\:/\:\si{\milli\meter}$ & $D(x)\:/\:\si{\milli\meter}$ & $f(x)=Lx^2-\frac{x^3}{3}$ \\
+      $x\:/\:\si{\milli\meter}$ & $D_1\:/\:\si{\milli\meter}$ & $D_2\:/\:\si{\milli\meter}$ & $D(x)\:/\:\si{\milli\meter}$ & $(x)=Lx^2-\frac{x^3}{3}$ \\
     \midrule
       290 & 8.31 & 7.72  & 5.89 & 3.83 \\
       295 & 8.31 & 7.74  & 5.70 & 3.95 \\
@@ -169,13 +199,21 @@ Man erhält durch Messung die in Tabelle \ref{tab:Rechteckwerte} gezeigten Werte
   \end{tabular}
 \end{table}
 
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{~/Documents/Uni/protokolle/Protokolle/Biegung_elastischer_Stäbe/Auswertung/plot4.pdf}
+  \caption{Ausgleichskurve durch Messwerte des rechteckigen Stabes bei zweiseitiger Einspannung. Linke Seite.}
+  \label{fig:kurveRechtlinks}
+\end{figure}
+
+
 \begin{table}
   \centering
   \caption{Messdaten zum zweiseitig eingespannten rechteckigen Stab. Rechte Seite}
   \label{tab:zweiwerte}
   \begin{tabular}{c c c c c c}
     \toprule
-      $x\:/\:\si{\milli\meter}$ & $D_1\:/\:\si{\milli\meter}$ & $D_2\:/\:\si{\milli\meter}$ & $D(x)\:/\:\si{\milli\meter}$ & $f(x)=Lx^2-\frac{x^3}{3}$ \\
+      $x\:/\:\si{\milli\meter}$ & $D_1\:/\:\si{\milli\meter}$ & $D_2\:/\:\si{\milli\meter}$ & $D(x)\:/\:\si{\milli\meter}$ & $g(x)=Lx^2-\frac{x^3}{3}$ \\
     \midrule
     255 & 10.08 & 9.50 & 5.80 & 3.04 \\
     250 & 10.08 & 9.55 & 5.29 & 2.93 \\
@@ -204,3 +242,10 @@ Man erhält durch Messung die in Tabelle \ref{tab:Rechteckwerte} gezeigten Werte
     \bottomrule
   \end{tabular}
 \end{table}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{~/Documents/Uni/protokolle/Protokolle/Biegung_elastischer_Stäbe/Auswertung/plot3.pdf}
+  \caption{Ausgleichskurve durch Messwerte des rechteckigen Stabes. Rechte Seite.}
+  \label{fig:kurveRechtrechts}
+\end{figure}

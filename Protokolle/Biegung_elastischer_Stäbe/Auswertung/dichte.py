@@ -10,8 +10,8 @@ rvolumen=ufloat((np.mean([.012,.012,.012,.012,.012,.012,.012,.012,.012,.0198])*l
 rdichte=m/rvolumen
 
 print('Rechteckvolumen =',rvolumen)
-print('Rechteckdichte=',rdichte)
-
+print('Rechtec,kdichte=',rdichte)
+print('b=',np.mean([.012,.012,.012,.012,.012,.012,.012,.012,.012,.0198]),np.std([.012,.012,.012,.012,.012,.012,.012,.012,.012,.0198]))
 #zylinder Stab.2
 
 l=0.58
@@ -21,3 +21,4 @@ zylvolumen=(np.pi*r*l)
 zyldichte=m/zylvolumen
 
 print('zylinderdichte=',zyldichte)
+print('d=',r*0.5)
