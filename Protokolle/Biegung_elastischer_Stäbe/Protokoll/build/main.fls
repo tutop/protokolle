@@ -375,6 +375,7 @@ INPUT /home/markus/.local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm
 INPUT /home/markus/.local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT /home/markus/.local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT /home/markus/.local/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman6-regular.luc
+INPUT /home/markus/.local/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman5-regular.luc
 INPUT ~/Documents/Uni/protokolle/Protokolle/Biegung_elastischer_Stäbe/Auswertung/plot1.pdf
 INPUT ~/Documents/Uni/protokolle/Protokolle/Biegung_elastischer_Stäbe/Auswertung/plot2.pdf
 INPUT ~/Documents/Uni/protokolle/Protokolle/Biegung_elastischer_Stäbe/Auswertung/plot4.pdf

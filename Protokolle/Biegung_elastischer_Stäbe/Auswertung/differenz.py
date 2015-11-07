@@ -47,7 +47,10 @@ W1,W1err,W2,W2err=linregress(g(ortr,LeingespR),rdiff)
 Q1,Q1err,Q2,Q2err=linregress(g(ortz,LeingespZ),zdiff)
 E1,E1err,E2,E2err=linregress(g(uhr1ortzweis,LzweieingespR),zweidiff1)
 E1_,E1err_,E2_,E2err_=linregress(g(uhr2ortzweis,LzweieingespR),zweidiff2)
-
+print('R=',W1)
+print('Z=',Q1)
+print('E1=',E1)
+print('E2=',E2)
 
 x = np.linspace(0,0.1, 1000)
 

@@ -15,7 +15,13 @@ Gewichtskraft von $F=\SI{10.23}{\newton}$. Für das Flächenträgheitsmoment erg
   I &= \int_Q y² \symup{d}q(y) \\
     &= \int_{y=-\frac{1}{2}h}^{y=\frac{1}{2}h} by² \symup{d}y \\
     &= \frac{1}{12}bh³ \\
-  I &= \frac{1}{12} \\
+  I &= \SI{1.07+-0.20e-9}{\meter^4}\\
+\end{align*}
+Durch linearen Regression wird die Steigung ermittelt. Als Steigung ergibt sich $m=\num{0.0401}$. Daraus folgt für das Elastizitätsmodul:
+\begin{align*}
+  m   &= \frac{F}{2EI} \\
+  E   &= \frac{F}{2mI} \\
+  E_1 &= \SI{1.20+-0.22e11}{\frac{\newton}{\meter^2}} \\
 \end{align*}
 
 

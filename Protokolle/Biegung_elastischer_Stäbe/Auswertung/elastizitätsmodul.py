@@ -16,5 +16,7 @@ Iz=np.pi/4*r**4
 Erecht=F1/(2*W1*Ir)
 Ezyl=F1/(2*Q1*Iz)
 
+print('Ir=',Ir)
+print('Iz=',Iz)
 print('Erecht',Erecht)
 print('Ezyl',Ezyl)
