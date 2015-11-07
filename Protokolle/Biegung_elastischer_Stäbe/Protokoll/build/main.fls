@@ -364,6 +364,13 @@ INPUT ./content/durchfuehrung.tex
 INPUT ./content/durchfuehrung.tex
 INPUT ./content/auswertung.tex
 INPUT ./content/auswertung.tex
+INPUT /home/markus/.local/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman8-regular.luc
+INPUT /home/markus/.local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
+INPUT /home/markus/.local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
+INPUT /home/markus/.local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm
+INPUT /home/markus/.local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT /home/markus/.local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT /home/markus/.local/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman6-regular.luc
 INPUT ./content/diskussion.tex
 INPUT ./content/diskussion.tex
 INPUT build/main.aux

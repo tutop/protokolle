@@ -1,5 +1,3 @@
-#werte mal 10^2 mm
-#wert 1 #wert 2 #position der uhr in mm
 831 772 290
 831 774 295
 833 774 300
