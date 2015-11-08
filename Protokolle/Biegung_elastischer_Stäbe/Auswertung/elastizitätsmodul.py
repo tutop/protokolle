@@ -1,7 +1,7 @@
 #(8) einseitig eingespannt
 import numpy as np
 from uncertainties import ufloat
-from differenz import W1,W2,Q1,Q2,E1,E2,E1_,E2_
+from differenz import W1,W2,Q1,Q2,hE1,hE2,fE1_,fE2_
 from kraft import F1,F2
 from dichte import r
 import math
@@ -15,8 +15,8 @@ Iz=np.pi/4*r**4
 
 Erecht=F1/(2*W1*Ir)
 Ezyl=F1/(2*Q1*Iz)
-Ezweilinks=F2/(48*Ir*E1)
-Ezweirechts=F2/(48*Ir*E1_)
+Ezweilinks=F2/(48*Ir*hE1)
+Ezweirechts=F2/(48*Ir*fE1_)
 
 print('Ir=',Ir)
 print('Iz=',Iz)
