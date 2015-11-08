@@ -2,6 +2,7 @@
 \label{sec:Auswertung}
 \subsection{Bestimmung des Elastizitätsmoduls bei einseitiger Einspannung}
 \subsubsection{Stab mit rechteckigem Querschnitt}
+\label{sec:rechteck}
 Im folgenden soll das Elastizitätsmodul des rechteckigen Stabes und des zylindrischen Stabes bei einseitiger Einspannung bestimmt werden.
 Man erhält durch Messung die in Tabelle \ref{tab:Rechteckwerte} gezeigten Werte. Mittels linearer Regression lässt sich das Elastizitätsmodul bestimmen.
 In Abbildung \ref{fig:kurveRecht} ist $D(x)$ über $g(x)$ aufgetragen.
@@ -96,6 +97,8 @@ Die Fehlerbehafteten Größen wurden mit Hilfe von Python 3.4.3 berechnet.
 \end{figure}
 
 \subsubsection{Zylindrischer Stab}
+\label{sec:zylinder}
+
 Nun wird beim zylindrischen Stab ähnlich verfahren wie beim vorherigen Stab.
 Als Messwerte wurden die in Tabelle \ref{tab:Zylwerte} gezeigten Daten ermittelt.
 In Abbildung \ref{fig:kurveZyl} wurde $D(x)$ über $g(x)$ aufgetragen und mittels linearer Regression ausgewertet. Als Steigung erhählt man $m=\num{0.040}$.
@@ -189,6 +192,10 @@ Mit Hilfe der ermittelten Steigung bestimmt sich das Elastizitätsmodul zu:
   \label{fig:kurveZyl}
 \end{figure}
 
+\subsection{Bestimmung des Elastizitätsmoduls bei zweiseitiger Auflage}
+
+Der in diesem Versuch benutzte Stab ist der gleiche wie in Kapitel \ref{sec:rechteck} bereits verwendete.
+Als Masse diente ein \num{} 
 
 \begin{table}
   \centering
@@ -233,6 +240,8 @@ Mit Hilfe der ermittelten Steigung bestimmt sich das Elastizitätsmodul zu:
   \caption{Ausgleichskurve durch Messwerte des rechteckigen Stabes bei zweiseitiger Einspannung. Linke Seite.}
   \label{fig:kurveRechtlinks}
 \end{figure}
+
+
 
 
 \begin{table}
