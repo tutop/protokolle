@@ -44,32 +44,38 @@ np.savetxt('diffzwei2g(x).txt', np.column_stack([g(uhr2ortzweis,LzweieingespR)])
 
 def f(x,L):
     return 3*L**2*x-4*x**3
-np.savetxt('diffrechtf(x).txt', np.column_stack([f(ortr,LeingespR)]), header='g(x)in m^3')
-np.savetxt('diffzylf(x).txt', np.column_stack([f(ortz,LeingespZ)]), header='g(x)')
-np.savetxt('diffzwei1f(x).txt', np.column_stack([f(uhr1ortzweis,LzweieingespR/2)]), header='g(x)')
-np.savetxt('diffzwei2f(x).txt', np.column_stack([f(uhr2ortzweis,LzweieingespR/2)]), header='g(x)')
+# np.savetxt('diffrechtf(x).txt', np.column_stack([f(ortr,LeingespR)]), header='g(x)in m^3')
+# np.savetxt('diffzylf(x).txt', np.column_stack([f(ortz,LeingespZ)]), header='g(x)')
+np.savetxt('diffzwei1f(x).txt', np.column_stack([f(uhr1ortzweis,LzweieingespR)]), header='g(x)')
+# np.savetxt('diffzwei2f(x).txt', np.column_stack([f(uhr2ortzweis,LzweieingespR/2)]), header='g(x)')
 
-fW1,fW1err,fW2,fW2err=linregress(f(ortr,LeingespR),rdiff)
-fQ1,fQ1err,fQ2,fQ2err=linregress(f(ortz,LeingespZ),zdiff)
+def h(x,L):
+    return 4*x**3-12*L*x**2+9*L**2*x-L**3
+np.savetxt('diffzwei2h(x).txt', np.column_stack([f(uhr2ortzweis,LzweieingespR)]), header='g(x)')
+
+
+
+# fW1,fW1err,fW2,fW2err=linregress(f(ortr,LeingespR),rdiff)
+# fQ1,fQ1err,fQ2,fQ2err=linregress(f(ortz,LeingespZ),zdiff)
 fE1,fE1err,fE2,fE2err=linregress(f(uhr1ortzweis,LzweieingespR),zweidiff1)
-fE1_,fE1err_,fE2_,fE2err_=linregress(f(uhr2ortzweis,LzweieingespR),zweidiff2)
+hE1_,hE1err_,hE2_,hE2err_=linregress(h(uhr2ortzweis,LzweieingespR),zweidiff2)
 
 
 W1,W1err,W2,W2err=linregress(g(ortr,LeingespR),rdiff)
 Q1,Q1err,Q2,Q2err=linregress(g(ortz,LeingespZ),zdiff)
-E1,E1err,E2,E2err=linregress(g(uhr1ortzweis,LzweieingespR),zweidiff1)
-E1_,E1err_,E2_,E2err_=linregress(g(uhr2ortzweis,LzweieingespR),zweidiff2)
+# E1,E1err,E2,E2err=linregress(f(uhr1ortzweis,LzweieingespR),zweidiff1)
+# E1_,E1err_,E2_,E2err_=linregress(h(uhr2ortzweis,LzweieingespR),zweidiff2)
 
 print('R=',W1)
 print('Z=',Q1)
-print('E1=',E1)
-print('E2=',E2)
+print('fE1=',fE1)
+print('hE1=',hE1_)
 
 
 
 
 
-x = np.linspace(0,0.1, 1000)
+x = np.linspace(-0.1,0.2, 1000)
 
 plt.plot(g(ortr,LeingespR),rdiff, 'bx', label='Rechteck')
 plt.plot(x,W2+x*W1,'b-')
@@ -91,9 +97,9 @@ plt.tight_layout()
 plt.savefig('plot2.pdf')
 plt.close()
 
-plt.plot(g(uhr1ortzweis,LzweieingespR),zweidiff1,'gx',label='zweiseitig eingespanntes Rechteck')
-plt.plot(x,E2+x*E1,'g-')
-plt.xlim(0,0.1)
+plt.plot(f(uhr1ortzweis,LzweieingespR),zweidiff1,'gx',label='zweiseitig eingespanntes Rechteck')
+plt.plot(x,fE2+x*fE1,'g-')
+# plt.xlim(0,0.1)
 plt.xlabel(r'$g(x) \ / \ m^3$')
 plt.ylabel(r'$D \ / \ m$')
 plt.legend(loc='best')
@@ -101,9 +107,9 @@ plt.tight_layout()
 plt.savefig('plot3.pdf')
 plt.close()
 
-plt.plot(g(uhr2ortzweis,LzweieingespR),zweidiff2,'gx',label='zweiseitig eingespanntes Rechteck')
-plt.plot(x,E2_+x*E1_,'g-')
-plt.xlim(0,0.1)
+plt.plot(h(uhr2ortzweis,LzweieingespR),zweidiff2,'gx',label='zweiseitig eingespanntes Rechteck')
+plt.plot(x,hE2_+x*hE1_,'g-')
+# plt.xlim(0,0.1)
 plt.xlabel(r'$g(x) \ / \ m^3$')
 plt.ylabel(r'$D \ / \ m$')
 plt.legend(loc='best')
@@ -115,7 +121,7 @@ plt.close()
 
 
 
-
+"""
 plt.plot(f(ortr,LeingespR),rdiff, 'bx', label='Rechteck')
 plt.plot(x,fW2+x*fW1,'b-')
 plt.xlim(0,0.1)
@@ -155,3 +161,4 @@ plt.legend(loc='best')
 plt.tight_layout()
 plt.savefig('fplot4.pdf')
 plt.close()
+"""
