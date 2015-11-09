@@ -9,4 +9,3 @@
 \contentsline {subsubsection}{\numberline {3.1.2}Zylindrischer Stab}{6}{subsubsection.3.1.2}
 \contentsline {subsection}{\numberline {3.2}Bestimmung des Elastizitätsmoduls bei zweiseitiger Auflage}{6}{subsection.3.2}
 \contentsline {section}{\numberline {4}Diskussion}{13}{section.4}
-\contentsline {section}{\nonumberline Literatur}{13}{section*.10}

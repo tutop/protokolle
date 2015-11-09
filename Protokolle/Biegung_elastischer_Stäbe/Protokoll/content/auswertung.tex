@@ -4,6 +4,7 @@
 \subsubsection{Stab mit rechteckigem Querschnitt}
 \label{sec:rechteck}
 Im folgenden soll das Elastizitätsmodul des rechteckigen Stabes und des zylindrischen Stabes bei einseitiger Einspannung bestimmt werden.
+Der Stab mit rechteckigem Querschnitt hat eine Länge $L_0=\SI{0.602}{\meter}$ und Masse $m=\SI{0.6051}{\kilo\gram}$.
 Man erhält durch Messung die in Tabelle \ref{tab:Rechteckwerte} gezeigten Werte. Mittels linearer Regression lässt sich das Elastizitätsmodul bestimmen.
 In Abbildung \ref{fig:kurveRecht} ist $D(x)$ über $g(x)$ aufgetragen.
 \\
@@ -16,13 +17,13 @@ Gewichtskraft von $F=\SI{10.23}{\newton}$. Für das Flächenträgheitsmoment erg
   I &= \int_Q y² \symup{d}q(y) \\
     &= \int_{y=-\frac{1}{2}h}^{y=\frac{1}{2}h} by² \symup{d}y \\
     &= \frac{1}{12}bh³ \\
-  I &= \SI{1.07+-0.20e-9}{\meter^4}\\
+  I &= \SI{9.998+-0.005e-10}{\meter^4}\\
 \end{align*}
 Durch linearen Regression wird die Steigung ermittelt. Als Steigung ergibt sich $m=\num{0.0401}$. Daraus folgt für das Elastizitätsmodul:
 \begin{align*}
   m   &= \frac{F}{2EI} \\
   E   &= \frac{F}{2mI} \\
-  E_1 &= \SI{1.20+-0.22e11}{\frac{\newton}{\meter^2}} \\
+  E_1 &= \SI{1.2745+-0.0006e11}{\frac{\newton}{\meter^2}} \\
 \end{align*}
 Die Fehlerbehafteten Größen wurden mit Hilfe von Python 3.4.3 berechnet.
 
@@ -99,27 +100,27 @@ Die Fehlerbehafteten Größen wurden mit Hilfe von Python 3.4.3 berechnet.
 \subsubsection{Zylindrischer Stab}
 \label{sec:zylinder}
 
-Nun wird beim zylindrischen Stab ähnlich verfahren wie beim vorherigen Stab.
+Nun wird beim zylindrischen Stab ähnlich verfahren wie beim vorherigen Stab. Der verwendete Stab hat die Länge $L_0=\SI{0.58}{\meter}$ und eine Masse $m_2=\SI{0.3564}{\kilo\gram}$.
 Als Messwerte wurden die in Tabelle \ref{tab:Zylwerte} gezeigten Daten ermittelt.
 In Abbildung \ref{fig:kurveZyl} wurde $D(x)$ über $g(x)$ aufgetragen und mittels linearer Regression ausgewertet. Als Steigung erhählt man $m=\num{0.040}$.
 \\
 \\
 Für die Abmessungen des Zylinders wurden folgende fehlerbehafteten Größen ermittelt.
-Die eingespannte Länge beträgt $L=\SI{0.525}{\meter}$ und der Durchmesser $d=\SI{0.009+-0.010}{\meter}$.
+Die eingespannte Länge beträgt $L=\SI{0.525}{\meter}$ und der Durchmesser $d=\SI{0.00994+-0.00009}{\meter}$.
 Für das Flächenträgheitsmoment ergibt sich:
 \begin{align*}
     I &= \int_Q y² \symup{d}q(y) \\
       &= \int_0^{2\symup{\pi}} \int_0^R r^3\sin^2\phi \: \symup{d}r\symup{d}\phi \\
       &= \frac{1}{4}R^4 \biggl[\frac{1}{2}\phi-\frac{1}{4}\sin2\phi\biggr]_0^{2\symup{\pi}} \\
       &= \frac{\symup{\pi}}{4}R^4 \\
-    I &= \SI{0.9+-3.8e-7}{\meter^4} \\
+    I &= \SI{4.79+-0.18e-10}{\meter^4} \\
 \end{align*}
 
 Mit Hilfe der ermittelten Steigung bestimmt sich das Elastizitätsmodul zu:
 
 \begin{align*}
     E   &= \frac{F}{2mI} \\
-    E_2 &= \SI{1.1+-4.9e9}{\frac{\newton}{\meter^2}} \\
+    E_2 &= \SI{1.99+-0.07e11}{\frac{\newton}{\meter^2}} \\
 \end{align*}
 
 \begin{table}
@@ -205,7 +206,7 @@ Hieraus lässt sich mit Formel den Elastizitätsmodul berechnen:
 
 \begin{align*}
   E   &= \frac{F}{48Im} \\
-  E_3 &= \SI{2.0+-0.4e11}{\frac{\newton}{\meter^2}} \\
+  E_3 &= \SI{2.1218+-0.0011e11}{\frac{\newton}{\meter^2}} \\
 \end{align*}
 
 \begin{table}
@@ -255,7 +256,7 @@ Für die andere Seite, näher am Nullpunkt, wurden die in Tabelle \ref{tab:zweiw
 Mittels linearer Ausgleichsrechnung ergibt sich eine Steigung $m=\num{0.0038}$. Wieder lässt sich das selbe $I$ wie oben verwenden. Somit ergibt sich $E$ zu:
 \begin{align*}
   E   &= \frac{F}{48Im} \\
-  E_4 &= \SI{1.77+-0.32e11}{\frac{\newton}{\meter^2}} \\
+  E_4 &= \SI{1.8863+-0.0009e11}{\frac{\newton}{\meter^2}} \\
 \end{align*}
 
 \begin{table}
